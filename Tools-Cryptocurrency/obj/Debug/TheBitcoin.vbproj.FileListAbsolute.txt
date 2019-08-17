@@ -1,0 +1,11 @@
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\TheBitcoin.exe.config
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\TheBitcoin.exe
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\TheBitcoin.pdb
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\TheBitcoin.xml
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.Form1.resources
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.Resources.resources
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.vbproj.GenerateResource.Cache
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.exe
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.xml
+c:\users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.pdb
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\TheBitcoin.news.resources

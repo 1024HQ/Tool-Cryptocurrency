@@ -1,0 +1,11 @@
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\Tools-Cryptocurrency.vbproj.GenerateResource.Cache
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\Tools-Cryptocurrency.exe.config
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\Tools-Cryptocurrency.exe
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\Tools-Cryptocurrency.pdb
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\bin\Debug\Tools-Cryptocurrency.xml
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\Tools-Cryptocurrency.exe
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\Tools-Cryptocurrency.xml
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\Tools-Cryptocurrency.pdb
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.Form1.resources
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.Resources.resources
+C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.news.resources
