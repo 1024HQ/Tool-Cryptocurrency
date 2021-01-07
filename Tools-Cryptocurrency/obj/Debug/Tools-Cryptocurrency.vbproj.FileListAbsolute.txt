@@ -9,3 +9,13 @@ C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\D
 C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.Form1.resources
 C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.Resources.resources
 C:\Users\zxcvb\documents\visual studio 2012\Projects\TheBitcoin\TheBitcoin\obj\Debug\ToolsCryptocurrency.news.resources
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.exe.config
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.exe
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.xml
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.pdb
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.exe
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.pdb
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.xml
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Form1.resources
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Resources.resources
+C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.vbproj.GenerateResource.Cache

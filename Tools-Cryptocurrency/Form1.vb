@@ -4,11 +4,12 @@ Imports System.IO
 Public Class Form1
     ' ############################################################
     ' ######################## API SETTING ' #####################
-    Dim usb_thb As String = "https://hackerz.in.th/bitcoin/api/usd_to_thb.php" ' 1 ดอลล่า = บาทไทยปัจจุบัน
-    Dim coinmarketcap_bitcoin As String = "https://hackerz.in.th/bitcoin/api/bitcoin_price.php" ' coinmarketcap
-    Dim bx_bitcoin As String = "https://hackerz.in.th/bitcoin/api/bitcoin_priceth.php" ' bx.in.th
-    Dim pingping As String = "https://hackerz.in.th/bitcoin/update/status_ping.php" 'ping test
-    Dim server As String = "https://hackerz.in.th/bitcoin/update2/server.ini" ' server version
+    Dim usb_thb As String = "https://hi.in.th/api/usd-thb.php" ' 1 ดอลล่า = บาทไทยปัจจุบัน
+    Dim coinmarketcap_bitcoin As String = "https://hi.in.th/api/bitcoin-coinmarketcap.php" ' coinmarketcap
+    Dim bitkub As String = "https://hi.in.th/api/bitcoin-bitkub.php" ' bitkub
+    Dim pingping As String = "https://hi.in.th/api/ping.php" 'ping test
+    Dim server As String = "https://hi.in.th/api/server.ini" ' server version
+    Dim version As String = "1.0.0.1" ' version
 
     ' ######################## DATA API ##########################
     ' My.Settings.thb = 1 ดอล แปลงเป็น บาท
@@ -24,6 +25,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'version
+        Label12.Text = Version
         'เริ่มต้นระบบออโต้รันโค๊ด ทุกๆ 30 วินาที / 30000 s
         reload.Start()
         'ตัวอัพเดทข้อมูลให้เป็นปัจจุบัน
@@ -47,7 +50,7 @@ Public Class Form1
         'coinmarketcap_bitcoin
         ex1.Navigate(coinmarketcap_bitcoin)
         'bx_bitcoin
-        ex2.Navigate(bx_bitcoin)
+        ex2.Navigate(bitkub)
         'ping test
         ping.Navigate(pingping)
         'version server checked
@@ -74,7 +77,7 @@ Public Class Form1
         'coinmarketcap_bitcoin
         ex1.Navigate(coinmarketcap_bitcoin)
         'bx_bitcoin
-        ex2.Navigate(bx_bitcoin)
+        ex2.Navigate(bitkub)
         'ping test
         ping.Navigate(pingping)
         'version server checked
@@ -87,7 +90,7 @@ Public Class Form1
 
     Private Sub update_Tick(sender As Object, e As EventArgs) Handles update.Tick
         ' แสดงผลเมื่อดึงข้อมูลจาก API สำเร็จ 
-        If Len(web_usb_to_thb.DocumentText) = "7" Then
+            Try
             thb.Text = FormatNumber(web_usb_to_thb.DocumentText, 2)
             My.Settings.thb = FormatNumber(web_usb_to_thb.DocumentText, 2)
             'ถ้าตัวแปรนี้มีค่ามากกว่า 4 จึงจะสามารถใช้ระบบคำนวณได้
@@ -99,11 +102,15 @@ Public Class Form1
                 End If
             End If
             ' end if loop
-        End If
+            Catch ex As Exception
 
-        ' ############# Start Coinmarketcap ############
+            End Try
+            
+
+
+        ' ############# Start API 1 ############
         ' แสดงผลเมื่อดึงข้อมูลจาก API สำเร็จ 
-        If Len(ex1.DocumentText) = "8" Then
+        Try
             coinmarketcap_usb.Text = FormatNumber(ex1.DocumentText, 2) + " $"
             ' แปลงเป็นค่าเงินบาทไทย
             coinmarketcap_thb.Text = FormatNumber(coinmarketcap_usb.Text * thb.Text, 2) + " บาท"
@@ -119,13 +126,17 @@ Public Class Form1
                     My.Settings.loop2 += 1
                 End If
             End If
-            ' end if loop
-        End If
-        ' ############# End Coinmarketcap #############
+        Catch ex As Exception
+
+        End Try
+        
+
+        ' ############# End API 1 #############
 
 
-        ' ############# Start bx.in.th ################
-        If Len(ex2.DocumentText) = "8" Then
+        ' ############# Start API 2 ################
+        Try
+
             bx_usb.Text = FormatNumber(ex2.DocumentText, 2) + " $"
             ' แปลงเป็นค่าเงินบาทไทย
             bx_thb.Text = FormatNumber(bx_usb.Text * thb.Text, 2) + " บาท"
@@ -143,25 +154,18 @@ Public Class Form1
             End If
             ' end if loop
 
-        End If
-        ' ############# End bx.in.th ##################
+
+        Catch ex As Exception
+
+        End Try
+        
+        ' ############# End API 2 ##################
 
         'เช็คปิง
-        If Len(ping.DocumentText) >= "3" Then
+
+        Try
+            'โชว์ค่าปิงเซิร์ฟเวอร์
             pingshow.Text = ping.DocumentText
-            ' progressbar ping
-            Dim value As String = ping.DocumentText
-            Dim index As Integer = value.LastIndexOf(" "c)
-            value = value.Remove(index) ' ลบตัวอักษรออก
-
-            ' ป้องกันบัค เมื่อค่าน้อยกว่าหรือเท่ากับ 100 เท่านั้น จึงจะทำงาน
-            If value <= 100 Then
-                pingstats.Value = FormatNumber(value)
-
-            ElseIf value > 100 Then
-                pingstats.Value = 100
-            End If
-
             pingstats.ForeColor = Color.Red
             'ถ้าตัวแปรนี้มีค่ามากกว่า 4 จึงจะสามารถใช้ระบบคำนวณได้
             If My.Settings.loop4 < 1 Then
@@ -170,9 +174,16 @@ Public Class Form1
                     My.Settings.checked += 1
                     My.Settings.loop4 += 1
                 End If
+
+            End If
+            If pingshow.Text <= 100 Then
+                pingstats.Value = pingshow.Text
             End If
             ' end if loop
-        End If
+        Catch ex As Exception
+
+        End Try
+
 
 
         'แสดงผลเวลาปัจจุบัน อ้างอิงจากเครื่อง
@@ -181,9 +192,12 @@ Public Class Form1
 
 
         'version checked
-        If Len(serververion.DocumentText) = "7" Then
+        Try
             Labelversionserver.Text = serververion.DocumentText
-        End If
+        Catch ex As Exception
+
+        End Try
+        
 
 
 
@@ -218,13 +232,13 @@ Public Class Form1
             pic3.Image = My.Resources.USD
             pic4.Image = My.Resources.BTC
             pic5.Image = My.Resources.USD
-        ElseIf ComboBox1.Text = "[bx.in.th] BTC แปลงเป็น THB" Then
+        ElseIf ComboBox1.Text = "[bitkub.com] BTC แปลงเป็น THB" Then
             pic1.Image = My.Resources.BTC
             pic2.Image = My.Resources.equalsz
             pic3.Image = My.Resources.thb
             pic4.Image = My.Resources.BTC
             pic5.Image = My.Resources.thb
-        ElseIf ComboBox1.Text = "[bx.in.th] BTC แปลงเป็น USD" Then
+        ElseIf ComboBox1.Text = "[bitkub.com] BTC แปลงเป็น USD" Then
             pic1.Image = My.Resources.BTC
             pic2.Image = My.Resources.equalsz
             pic3.Image = My.Resources.USD
@@ -278,7 +292,7 @@ Public Class Form1
             Else
                 TextBox2.Text = FormatNumber((My.Settings.coinmarketcap_usb * TextBox1.Text) * TextBox3.Text, 2)
             End If
-        ElseIf ComboBox1.Text = "[bx.in.th] BTC แปลงเป็น THB" Then
+        ElseIf ComboBox1.Text = "[bitkub.com] BTC แปลงเป็น THB" Then
             ' เมื่อไม่ใส่ค่าก็จะทำให้ไม่สามารถคำนวณได้
             If TextBox1.Text = "" Then
             ElseIf TextBox1.Text = " " Then
@@ -287,7 +301,7 @@ Public Class Form1
             Else
                 TextBox2.Text = FormatNumber((My.Settings.bx_thb * TextBox1.Text) * TextBox3.Text, 2)
             End If
-        ElseIf ComboBox1.Text = "[bx.in.th] BTC แปลงเป็น USD" Then
+        ElseIf ComboBox1.Text = "[bitkub.com] BTC แปลงเป็น USD" Then
             ' เมื่อไม่ใส่ค่าก็จะทำให้ไม่สามารถคำนวณได้
             If TextBox1.Text = "" Then
             ElseIf TextBox1.Text = " " Then
@@ -424,14 +438,11 @@ Public Class Form1
         TextBox3.Text = "1"
     End Sub
 
-    Private Sub SettingToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingToolStripMenuItem.Click
-        Process.Start("www.ingapp.in.th")
-        news.Show()
-    End Sub
+ 
 
     Private Sub CToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CToolStripMenuItem.Click
-        MsgBox("markerz99", , "Note")
-        Process.Start("https://www.facebook.com/markerz99/")
+        MsgBox("1024", , "Note")
+        Process.Start("https://www.facebook.com/1024HQ/")
     End Sub
 
     Private Sub TextBox1_KeyPress(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles TextBox1.KeyPress
@@ -511,6 +522,6 @@ Public Class Form1
     End Sub
 
     Private Sub GithubToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GithubToolStripMenuItem.Click
-        Process.Start("https://github.com/markerz99/toolbitcoin")
+        Process.Start("https://github.com/1024HQ/Tool-Cryptocurrency")
     End Sub
 End Class
