@@ -19,3 +19,13 @@ C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools
 C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Form1.resources
 C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Resources.resources
 C:\Users\markerz99\Documents\Visual Studio 2012\Tool-Cryptocurrency-master\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.vbproj.GenerateResource.Cache
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.exe.config
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.exe
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.xml
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.pdb
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.exe
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.pdb
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\bin\Debug\Tools-Cryptocurrency.xml
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Form1.resources
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\ToolsCryptocurrency.Resources.resources
+C:\Users\markerz99\Documents\GitHub\Tool-Cryptocurrency\Tools-Cryptocurrency\obj\Debug\Tools-Cryptocurrency.vbproj.GenerateResource.Cache

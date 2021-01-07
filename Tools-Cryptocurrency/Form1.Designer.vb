@@ -57,7 +57,6 @@ Partial Class Form1
         Me.bx_usb = New System.Windows.Forms.Label()
         Me.loadingpng = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.pic5 = New System.Windows.Forms.PictureBox()
         Me.pic4 = New System.Windows.Forms.PictureBox()
@@ -385,7 +384,7 @@ Partial Class Form1
         Me.coinmarketcap_thb.AutoSize = True
         Me.coinmarketcap_thb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.coinmarketcap_thb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.coinmarketcap_thb.Location = New System.Drawing.Point(306, 114)
+        Me.coinmarketcap_thb.Location = New System.Drawing.Point(317, 114)
         Me.coinmarketcap_thb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.coinmarketcap_thb.Name = "coinmarketcap_thb"
         Me.coinmarketcap_thb.Size = New System.Drawing.Size(115, 20)
@@ -408,7 +407,7 @@ Partial Class Form1
         Me.coinmarketcap_usb.AutoSize = True
         Me.coinmarketcap_usb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.coinmarketcap_usb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.coinmarketcap_usb.Location = New System.Drawing.Point(198, 114)
+        Me.coinmarketcap_usb.Location = New System.Drawing.Point(182, 114)
         Me.coinmarketcap_usb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.coinmarketcap_usb.Name = "coinmarketcap_usb"
         Me.coinmarketcap_usb.Size = New System.Drawing.Size(67, 20)
@@ -443,7 +442,7 @@ Partial Class Form1
         Me.bx_thb.AutoSize = True
         Me.bx_thb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bx_thb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.bx_thb.Location = New System.Drawing.Point(306, 81)
+        Me.bx_thb.Location = New System.Drawing.Point(317, 81)
         Me.bx_thb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.bx_thb.Name = "bx_thb"
         Me.bx_thb.Size = New System.Drawing.Size(115, 20)
@@ -466,7 +465,7 @@ Partial Class Form1
         Me.bx_usb.AutoSize = True
         Me.bx_usb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bx_usb.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.bx_usb.Location = New System.Drawing.Point(198, 81)
+        Me.bx_usb.Location = New System.Drawing.Point(182, 81)
         Me.bx_usb.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.bx_usb.Name = "bx_usb"
         Me.bx_usb.Size = New System.Drawing.Size(67, 20)
@@ -479,7 +478,6 @@ Partial Class Form1
         '
         'GroupBox3
         '
-        Me.GroupBox3.Controls.Add(Me.Label13)
         Me.GroupBox3.Controls.Add(Me.Button2)
         Me.GroupBox3.Controls.Add(Me.pic5)
         Me.GroupBox3.Controls.Add(Me.pic4)
@@ -500,15 +498,6 @@ Partial Class Form1
         Me.GroupBox3.TabIndex = 10
         Me.GroupBox3.TabStop = False
         Me.GroupBox3.Text = "System"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(39, 194)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(89, 26)
-        Me.Label13.TabIndex = 12
-        Me.Label13.Text = "Label13"
         '
         'Button2
         '
@@ -1718,6 +1707,5 @@ Partial Class Form1
     Friend WithEvents RadioButton5 As System.Windows.Forms.RadioButton
     Friend WithEvents Exchange As System.Windows.Forms.GroupBox
     Friend WithEvents GithubToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents Label13 As System.Windows.Forms.Label
 
 End Class
