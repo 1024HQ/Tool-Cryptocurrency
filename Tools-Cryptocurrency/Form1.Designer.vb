@@ -178,7 +178,7 @@ Partial Class Form1
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.Padding = New System.Windows.Forms.Padding(4, 2, 0, 2)
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
-        Me.MenuStrip1.Size = New System.Drawing.Size(868, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(862, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -216,7 +216,7 @@ Partial Class Form1
         Me.StatusStrip1.Padding = New System.Windows.Forms.Padding(1, 0, 10, 0)
         Me.StatusStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
         Me.StatusStrip1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.StatusStrip1.Size = New System.Drawing.Size(868, 28)
+        Me.StatusStrip1.Size = New System.Drawing.Size(862, 28)
         Me.StatusStrip1.SizingGrip = False
         Me.StatusStrip1.TabIndex = 1
         Me.StatusStrip1.Text = "StatusStrip1"
@@ -650,7 +650,7 @@ Partial Class Form1
         Me.GroupBox5.Size = New System.Drawing.Size(178, 210)
         Me.GroupBox5.TabIndex = 35
         Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "BTC / THB,USD | bx.in.th"
+        Me.GroupBox5.Text = "BTC / THB,USD | bitkub.com"
         '
         'nn28
         '
@@ -962,9 +962,9 @@ Partial Class Form1
         Me.GroupBox4.Controls.Add(Me.mm5)
         Me.GroupBox4.Controls.Add(Me.mm3)
         Me.GroupBox4.Controls.Add(Me.mm1)
-        Me.GroupBox4.Location = New System.Drawing.Point(674, 261)
+        Me.GroupBox4.Location = New System.Drawing.Point(656, 261)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(178, 210)
+        Me.GroupBox4.Size = New System.Drawing.Size(196, 210)
         Me.GroupBox4.TabIndex = 36
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "BTC / THB,USD | coinmarketcap"
@@ -1523,7 +1523,7 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.BackColor = System.Drawing.Color.White
-        Me.ClientSize = New System.Drawing.Size(868, 609)
+        Me.ClientSize = New System.Drawing.Size(862, 609)
         Me.Controls.Add(Me.GroupBox7)
         Me.Controls.Add(Me.serververion)
         Me.Controls.Add(Me.GroupBox6)
@@ -1547,7 +1547,7 @@ Partial Class Form1
         Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Tools - Cryptocurrency - 1024 Copyright ©  2019"
+        Me.Text = "Tools - Cryptocurrency - 1024 ©  2019"
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.StatusStrip1.ResumeLayout(False)
